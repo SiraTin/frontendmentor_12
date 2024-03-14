@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    font-family: "Outfit";
+}   
+
+@font-face {
+    font-family: "Outfit";
+    src: url("fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 115px;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.detail{
+    width: 50%;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #572059;
+}
+
+.description{
+    margin: 20px 0;  
+    font-size: 1.25rem;
+    color: #887C86;
+}
+
+.rate_box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 445px;
+    gap: 10px;
+    background-color: #F7F2F8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.contain_star{
+    margin-left: 20px;
+}
+
+.mid{
+    margin-left: 50px;
+}
+
+.right{
+    margin-left: 100px;
+}
+
+.rate_detail{
+    margin-left: 20px;
+    color:#511F50;
+    font-weight: 800;
+}
+
+.contain_bot{
+    width: 100%;
+    display: flex;
+    margin: 75px 0;
+    gap:50px;
+}
+
+
+.review_box{
+    width: 310px;
+    padding: 40px;
+    background-color: #511F50;
+    border-radius: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.img_profile{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.name_box{
+    margin-left: 20px;
+}
+
+
+.comment, .full_name{
+    color: #fff;
+}
+
+.full_name{
+    font-weight: 800;
+}
+
+.verified{
+    color: #A24E86;
+}
+
+.comment{
+    margin-top: 30px;
+}
+
+.left_box{
+    align-self: flex-start;
+}
+
+.mid_box{
+   margin-top: 20px;
+   align-self: flex-start;
+}
+
+.right_box{
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 900px){
+    .d_flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detail{
+        width: 100%;
+    }
+
+    .rate_box{
+        width: 100%;
+    }
+    
+    .mid{
+        margin-left: 0;
+    }
+
+    .right{
+        margin-left: 0;
+    }
+
+    .rate_box{
+        flex-direction: column;
+        padding: 20px 0;
+        margin: 15px auto;
+    }
+
+    .contain_bot{
+        flex-direction: column;
+    }
+
+    .review_box{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .profile{
+        margin: 40px;
+    }
+
+    .full_name{
+        padding: 20px;
+    }
+
+    .comment{
+        padding: 0 40px 40px 40px;
+    }
+
+}
